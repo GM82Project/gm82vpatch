@@ -1,3 +1,6 @@
+; dll by floogle
+; github.com/skyfloogle
+
 ; ml /coff sleep.asm /link /dll /nocoffgrpinfo /entry:dllmain /def:sleep.def /out:sleep.dll
 
 .386
