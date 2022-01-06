@@ -16,13 +16,13 @@ dllmain proc stdcall instance:dword,reason:dword,unused:dword
 	ret
 dllmain endp
 
-__gm82vpatch_sleep proc c time:real8
+__floogle_sleep proc c time:real8
 LOCAL itime:dword
 	fld time
 	fistp itime
 	invoke Sleep,[itime]
 	fldz
 	ret
-__gm82vpatch_sleep endp
+__floogle_sleep endp
 
 end
