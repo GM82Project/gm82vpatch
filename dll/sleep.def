@@ -1,2 +1,3 @@
 EXPORTS
 __floogle_sleep
+__floogle_timer
