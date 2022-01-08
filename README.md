@@ -1,6 +1,9 @@
 # gm82vpatch
 This extension will improve frame pacing in GM8 games, by exploiting a DX8 swapchain delay.
 
+## Deprecation notice
+This extension has had a lot of research put into it, but ultimately the solution was poking DirectX8 directly. As such, we've moved our findings to the [GM 8.2 DirectX8 Extension](https://github.com/omicronrex/gm82dx8), where it can be fully realized. This repo will continue existing, but won't receive updates. Please use the new extension instead.
+
 ## How it works
 We're not exactly sure of why and how, but we have tested and confirmed that it does work.
 
