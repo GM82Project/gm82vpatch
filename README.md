@@ -5,7 +5,7 @@ This extension will improve frame pacing in GM8 games, by exploiting a DX8 swapc
 This extension has had a lot of research put into it, but ultimately the solution was poking DirectX8 directly. As such, we've moved our findings to the [GM 8.2 DirectX8 Extension](https://github.com/omicronrex/gm82dx8), where it can be fully realized. This repo will continue existing, but won't receive updates. Please use the new extension instead.
 
 ## Post-deprecation updates
-Even after this extension was deprecated, it's still being used in [Debugger Helper](https://delicious-fruit.com/ratings/game_details.php?id=23936) 
+Even after this extension was deprecated, it's still being used in [Debugger Helper](https://delicious-fruit.com/ratings/game_details.php?id=23936).
 Recently we figured out that some gm8 games had issues when game_restart was called. We fixed that and also added support for detecting specific versions of 8.1, since 8.1 has a lot of versions in use in aiwanas.
 
 ## How it works
