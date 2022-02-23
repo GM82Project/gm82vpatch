@@ -8,7 +8,7 @@
     //create a daemon to run the vpatch code
     object_event_add(__vpatch_object,ev_destroy,0,"instance_copy(0)")
     object_event_add(__vpatch_object,ev_other,ev_room_end,"persistent=true")
-    object_event_add(__vpatch_object,ev_other,ev_animation_end,"__gm82vpatch_dovsync()")
+    object_event_add(__vpatch_object,ev_other,ev_animation_end,"__gm82vpatch_dovsync() __gm82vpatch_removelag()")
     
     //switch depending on gm version
     if (gamemaker_version==800) {
@@ -58,5 +58,13 @@
 
         //epic win
     }
+
+
+#define __gm82vpatch_removelag
+    //remove key release input lag from using direct checks
+    keyboard_check_direct(vk_up)
+    keyboard_check_direct(vk_down)
+    keyboard_check_direct(vk_left)
+    keyboard_check_direct(vk_right)
 
 
